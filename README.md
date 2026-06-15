@@ -1,31 +1,36 @@
 # AURILIA - site temporaire
 
-Site statique pret pour GitHub Pages.
+Site statique public et temporaire pour AURILIA, prêt pour GitHub Pages.
 
-## Publication GitHub Pages
+## Déploiement GitHub Pages
 
-1. Creer un depot GitHub nomme `aurilia`.
-2. Envoyer ces fichiers dans le depot.
-3. Dans GitHub, ouvrir `Settings > Pages`.
-4. Choisir `Deploy from a branch`.
-5. Choisir la branche `main` et le dossier `/root`.
-6. Ajouter le domaine personnalise `aurilia.ca`.
+Le site est publié avec GitHub Pages.
+
+- Branche publiée : `main`
+- Dossier publié : `/root`
+- Domaine personnalisé : `aurilia.ca`
+- Fichier de domaine : `CNAME`
+- DNS : gérés chez WHC
+
+Ce dépôt sert seulement au site public statique. Il ne contient pas l'application AURILIA complète.
 
 ## DNS chez WHC pour aurilia.ca
 
-Ajouter ces enregistrements DNS:
+Le domaine racine `aurilia.ca` pointe vers les IP GitHub Pages :
 
 ```text
 A     @     185.199.108.153
 A     @     185.199.109.153
 A     @     185.199.110.153
 A     @     185.199.111.153
-CNAME www   karlprescott.github.io
 ```
 
-Ensuite, dans GitHub Pages, activer `Enforce HTTPS` quand l'option devient disponible.
+Le sous-domaine `www.aurilia.ca` pointe vers GitHub Pages :
 
-## A remplacer
+```text
+CNAME www   karl-prescott.github.io
+```
 
-- Le lien Facebook dans `index.html`
-- L'adresse `contact@aurilia.ca` si elle n'est pas encore active
+## Note DNS et HTTPS
+
+Après une modification DNS ou GitHub Pages, la propagation peut prendre du temps. Le HTTPS peut aussi prendre un certain délai avant d'être pleinement actif.
