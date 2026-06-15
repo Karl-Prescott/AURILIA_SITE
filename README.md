@@ -14,6 +14,16 @@ Le site est publié avec GitHub Pages.
 
 Ce dépôt sert seulement au site public statique. Il ne contient pas l'application AURILIA complète.
 
+## État actuel
+
+- Site statique publié sur GitHub Pages.
+- Domaine `aurilia.ca` configuré.
+- DNS configurés chez WHC pour pointer vers GitHub Pages.
+- Propagation DNS et HTTPS en attente ou à surveiller.
+- Ne plus modifier les DNS pour l'instant.
+- Projet AURILIA_SITE en pause temporaire pendant l'attente DNS/HTTPS.
+- Prochaine étape possible : reprendre Recetto dans le projet principal `Z:\AURILIA`.
+
 ## DNS chez WHC pour aurilia.ca
 
 Le domaine racine `aurilia.ca` pointe vers les IP GitHub Pages :
