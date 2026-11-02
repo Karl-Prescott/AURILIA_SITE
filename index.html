@@ -19,9 +19,22 @@
       <h1 id="title">Une nouvelle étape<br>se prépare.</h1>
       <p class="intro">Notre site est temporairement en construction.</p>
       <p>Nous travaillons sur la prochaine version d’AURILIA.</p>
+      <section class="launch" aria-labelledby="launch-title">
+        <h2 id="launch-title">Prochaine étape AURILIA</h2>
+        <p id="launch-status" class="launch-status">Objectif bêta — date prévisionnelle</p>
+        <p id="launch-date" class="launch-date">21 décembre 2026 à 17 h 17 (heure du Québec)</p>
+        <div id="countdown" class="countdown" role="timer" aria-live="off" aria-label="Temps restant avant la date prévisionnelle" hidden>
+          <div><span id="days">00</span><span>jours</span></div>
+          <div><span id="hours">00</span><span>heures</span></div>
+          <div><span id="minutes">00</span><span>minutes</span></div>
+          <div><span id="seconds">00</span><span>secondes</span></div>
+        </div>
+        <p id="launch-note" class="launch-note">Date prévisionnelle, sous réserve des dernières validations.</p>
+      </section>
       <p class="thanks">Merci de votre patience et à bientôt.</p>
     </section>
   </main>
   <footer>AURILIA</footer>
+  <script src="countdown.js" defer></script>
 </body>
 </html>
