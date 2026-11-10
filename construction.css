@@ -28,3 +28,11 @@ footer { padding: 22px 20px; text-align: center; color: #c2d5e8; font-size: 12px
 .countdown span:first-child { font-size: clamp(24px,5vw,38px); font-weight: 700; color: #ff9f43; font-variant-numeric: tabular-nums; }
 .countdown span:last-child { margin-top: 6px; font-size: 12px; color: #e2eaf4; }
 @media (max-width: 360px) { .countdown { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+
+/* Presentation video: no autoplay; native keyboard/touch controls. */
+.presentation-video { margin-top: 30px; padding-top: 26px; border-top: 1px solid rgba(255,255,255,.16); }
+.presentation-video h2 { margin: 0 0 18px; font-size: clamp(20px,3vw,26px); line-height: 1.3; }
+.presentation-video video { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: #050f23; border-radius: 12px; border: 1px solid rgba(255,159,67,.35); }
+.presentation-video .video-note { margin: 12px 0 6px; font-size: 14px; }
+.video-link { color: #ffcc94; font-size: 14px; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.video-link:focus-visible, .presentation-video video:focus-visible { outline: 3px solid #ff9f43; outline-offset: 4px; }
